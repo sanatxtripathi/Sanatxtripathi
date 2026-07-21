@@ -32,7 +32,7 @@ I'm a Computer Science Engineering student passionate about **Cybersecurity, Com
 - VS Code
 - Linux
 - Windows
-- MySQL (Learning)
+
 
 ---
 
