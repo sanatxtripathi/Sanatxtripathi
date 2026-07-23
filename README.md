@@ -1,88 +1,111 @@
 # Hi 👋, I'm Sanat Tripathi
 
-### 💻 B.Tech CSE Student | Aspiring Cybersecurity Professional | Problem Solver
+### 🎓 B.Tech CSE Student | AI/ML Enthusiast | Aspiring Machine Learning Engineer
 
-I'm a Computer Science Engineering student passionate about **Cybersecurity, Competitive Programming, Web Development, and Open Source**. I'm continuously learning new technologies, solving coding problems, and building projects to become a skilled cybersecurity engineer.
+Welcome to my GitHub! I'm a Computer Science Engineering student passionate about **Artificial Intelligence, Machine Learning, Data Science, Python, and Competitive Programming**. I enjoy solving problems, building intelligent applications, and continuously improving my programming skills.
 
 ---
 
 ## 🚀 About Me
 
 - 🎓 B.Tech Computer Science Engineering Student
-- 🔐 Aspiring Cybersecurity Professional
-- 💻 Learning Data Structures & Algorithms
-- 🌐 Exploring Web Development
-- ☁️ Interested in Linux, Networking & Cloud
-- 🎯 Goal: Become a Security Engineer by Graduation
+- 🤖 Professional Elective: **Track 1 – Data Visualization & AI/ML**
+- 🐍 Learning Python for AI & Machine Learning
+- 📊 Interested in Data Science & Analytics
+- 💻 Practicing Data Structures & Algorithms
+- 🌱 Continuously learning new technologies
+- 🎯 Goal: Become an AI/ML Engineer
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠 Tech Stack
 
 ### Languages
+- Python
 - C++
 - HTML
 - CSS
 - JavaScript (Learning)
-- Python (Learning)
 
-### Tools & Technologies
+### AI/ML & Data Science
+- NumPy (Learning)
+- Pandas (Learning)
+- Matplotlib (Learning)
+- Seaborn (Learning)
+- Scikit-learn (Learning)
+
+### Tools
 - Git
 - GitHub
 - VS Code
-- Linux
-- Windows
-
+- Jupyter Notebook
+- Google Colab
 
 ---
 
-## 📈 Competitive Programming
+## 📚 Current Learning Journey
 
-🏆 CodeChef  
-https://www.codechef.com/users/cse25_0288
+### Semester III
+- Python Programming
+- Data Visualization
 
-💡 LeetCode  
+### Semester IV
+- Data Handling
+- Artificial Intelligence
+
+### Semester V
+- Machine Learning
+- Neural Networks
+
+### Semester VI
+- Deep Learning
+
+---
+
+## 💻 Coding Profiles
+
+### LinkedIn
+https://www.linkedin.com/in/sanat-tripathi/
+
+### LeetCode
 https://leetcode.com/u/CSE25_2025B01010288/
 
-⚡ HackerRank  
+### CodeChef
+https://www.codechef.com/users/cse25_0288
+
+### HackerRank
 https://www.hackerrank.com/profile/CSE25_0288
 
 ---
 
-## 🌐 Connect With Me
+## 🚀 Projects
 
-💼 LinkedIn  
-https://www.linkedin.com/in/sanat-tripathi/
+Coming Soon...
 
----
-
-## 📚 Currently Learning
-
-- Data Structures & Algorithms
-- Operating System
-- Computer Networks
-- Database Management System
-- Cybersecurity Fundamentals
-- Linux
-- Web Development
+- Data Analysis Projects
+- Machine Learning Models
+- Python Automation
+- Web Development Projects
+- AI Applications
 
 ---
 
-## 🎯 2026 Goals
+## 🎯 Goals (2026–2029)
 
-- Solve 500+ DSA Problems
-- Master C++
-- Learn Python for Cybersecurity
-- Learn Linux & Networking
-- Start Bug Bounty Hunting
-- Build Real-world Security Projects
-- Earn Industry Certifications
+- ✅ Master Python
+- ✅ Solve 500+ DSA Problems
+- ✅ Learn Data Structures & Algorithms
+- ✅ Master NumPy & Pandas
+- ✅ Learn Machine Learning
+- ✅ Build 20+ AI Projects
+- ✅ Learn Deep Learning
+- ✅ Contribute to Open Source
+- ✅ Secure an AI/ML Internship
+- ✅ Become an AI/ML Engineer
 
 ---
 
-## 📊 GitHub Stats
-
-> Enable these after creating your GitHub profile README.
+## 📈 GitHub Stats
 
 ```md
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=tokyonight)
@@ -94,19 +117,26 @@ https://www.linkedin.com/in/sanat-tripathi/
 
 ---
 
-## 🏅 Coding Profiles
+## 🌟 Areas of Interest
 
-| Platform | Profile |
-|----------|----------|
-| LinkedIn | https://www.linkedin.com/in/sanat-tripathi/ |
-| CodeChef | https://www.codechef.com/users/cse25_0288 |
-| LeetCode | https://leetcode.com/u/CSE25_2025B01010288/ |
-| HackerRank | https://www.hackerrank.com/profile/CSE25_0288 |
+- Artificial Intelligence
+- Machine Learning
+- Data Science
+- Data Visualization
+- Deep Learning
+- Python Programming
+- Competitive Programming
+- Open Source
 
 ---
 
-## 💡 Quote
+## 📫 Connect With Me
 
-> "Consistency beats talent when talent doesn't work consistently."
+💼 LinkedIn
+https://www.linkedin.com/in/sanat-tripathi/
 
-⭐ Thank you for visiting my profile!
+---
+
+> **"Learning never stops. Every line of code is a step toward innovation."**
+
+⭐ Thanks for visiting my GitHub profile!
