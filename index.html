@@ -1,324 +1,1507 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sanat Tripathi | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Sanat Tripathi | AI & ML Portfolio</title>
 
-<style>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+><style>
+    /* ===========================
+   Google Font
+=========================== */
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-scroll-behavior:smooth;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#0f172a;
-color:#fff;
-line-height:1.7;
+    background:#0f172a;
+    color:#fff;
+    overflow-x:hidden;
 }
 
-header{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-background:linear-gradient(135deg,#1e3a8a,#0f172a);
+/* ===========================
+Particles
+=========================== */
+
+#particles-js{
+    position:fixed;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    top:0;
+    left:0;
 }
 
-header h1{
-font-size:55px;
+/* ===========================
+Navigation
+=========================== */
+
+nav{
+
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 10%;
+
+    position:fixed;
+    top:0;
+    z-index:999;
+
+    background:rgba(15,23,42,.75);
+    backdrop-filter:blur(10px);
+
 }
 
-header h2{
-margin-top:15px;
-font-weight:400;
-color:#cbd5e1;
+.logo{
+
+    font-size:28px;
+    font-weight:700;
+    color:#38bdf8;
+
 }
+
+nav ul{
+
+    display:flex;
+    list-style:none;
+    gap:35px;
+
+}
+
+nav ul li a{
+
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+    color:#38bdf8;
+
+}
+
+.theme-btn{
+
+    font-size:22px;
+    cursor:pointer;
+
+}
+
+/* ===========================
+Hero
+=========================== */
+
+.hero{
+
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:120px 10%;
+    gap:60px;
+
+}
+
+.hero-text{
+
+    flex:1;
+
+}
+
+.hero-text h3{
+
+    font-size:25px;
+    color:#38bdf8;
+
+}
+
+.hero-text h1{
+
+    font-size:70px;
+    margin:15px 0;
+
+}
+
+.hero-text h2{
+
+    color:#60a5fa;
+    margin-bottom:25px;
+    min-height:45px;
+
+}
+
+.hero-text p{
+
+    font-size:18px;
+    color:#d1d5db;
+    line-height:1.8;
+
+}
+
+.hero-image{
+
+    flex:1;
+    display:flex;
+    justify-content:center;
+
+}
+
+.hero-image img{
+
+    width:330px;
+    height:330px;
+
+    border-radius:50%;
+    border:6px solid #38bdf8;
+
+    object-fit:cover;
+
+    box-shadow:0 0 40px #38bdf8;
+
+    transition:.5s;
+
+}
+
+.hero-image img:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ===========================
+Buttons
+=========================== */
 
 .btn{
-display:inline-block;
-margin-top:30px;
-padding:15px 35px;
-background:#3b82f6;
-color:white;
-text-decoration:none;
-border-radius:8px;
-transition:.3s;
-font-weight:600;
+
+    display:inline-block;
+    margin-top:35px;
+    padding:15px 35px;
+
+    text-decoration:none;
+
+    background:#38bdf8;
+
+    color:#fff;
+
+    border-radius:10px;
+
+    transition:.4s;
+
+    margin-right:15px;
+
 }
 
 .btn:hover{
-background:#2563eb;
-transform:translateY(-3px);
+
+    transform:translateY(-5px);
+
+    background:#2563eb;
+
+}
+
+.secondary{
+
+    background:transparent;
+
+    border:2px solid #38bdf8;
+
+}
+
+/* ===========================
+Sections
+=========================== */
+
+section{
+
+    padding:90px 10%;
+
+}
+
+.section-title{
+
+    font-size:40px;
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+    color:#38bdf8;
+
+}
+
+/* ===========================
+Glass Card
+=========================== */
+
+.glass-card{
+
+    background:rgba(255,255,255,.08);
+
+    padding:35px;
+
+    border-radius:20px;
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    transition:.4s;
+
+}
+
+.glass-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+/* ===========================
+Skills
+=========================== */
+
+.skills-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:25px;
+
+}
+
+.skill-card{
+
+    background:#1e293b;
+
+    padding:30px;
+
+    text-align:center;
+
+    border-radius:15px;
+
+    transition:.4s;
+
+    font-weight:600;
+
+}
+
+.skill-card:hover{
+
+    background:#2563eb;
+
+    transform:translateY(-10px);
+
+}
+
+/* ===========================
+Timeline
+=========================== */
+
+.timeline{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.timeline-item{
+
+    background:#1e293b;
+
+    padding:30px;
+
+    border-left:5px solid #38bdf8;
+
+    border-radius:15px;
+
+    width:600px;
+
+}
+
+.timeline-item h3{
+
+    color:#38bdf8;
+
+    margin-bottom:10px;
+
+}
+
+/* ===========================
+Projects
+=========================== */
+
+.project-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+.project-card{
+
+    background:#1e293b;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    transition:.4s;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 0 20px #38bdf8;
+
+}
+
+.project-card h3{
+
+    color:#38bdf8;
+
+    margin-bottom:15px;
+
+}
+
+/* ===========================
+Profiles
+=========================== */
+
+.profiles{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
+}
+
+.profiles a{
+
+    text-decoration:none;
+
+    color:white;
+
+    background:#1e293b;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    font-size:18px;
+
+}
+
+.profiles a:hover{
+
+    background:#2563eb;
+
+    transform:translateY(-8px);
+
+}
+
+.profiles i{
+
+    display:block;
+
+    font-size:35px;
+
+    margin-bottom:12px;
+
+}
+
+/* ===========================
+Contact
+=========================== */
+
+.contact-box{
+
+    text-align:center;
+
+    background:#1e293b;
+
+    padding:50px;
+
+    border-radius:20px;
+
+}
+
+.contact-box p{
+
+    margin-bottom:25px;
+
+}
+
+/* ===========================
+Footer
+=========================== */
+
+footer{
+
+    text-align:center;
+
+    padding:30px;
+
+    background:#020617;
+
+    color:#94a3b8;
+
+}
+
+/* ===========================
+Responsive
+=========================== */
+
+@media(max-width:992px){
+
+.hero{
+
+    flex-direction:column-reverse;
+
+    text-align:center;
+
+}
+
+.hero-image img{
+
+    width:260px;
+
+    height:260px;
+
+}
+
+.hero-text h1{
+
+    font-size:50px;
+
+}
+
+nav{
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+nav ul{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero-text h1{
+
+    font-size:40px;
+
+}
+
+.hero-text h2{
+
+    font-size:24px;
+
+}
+
+.section-title{
+
+    font-size:32px;
+
+}
+
+.timeline-item{
+
+    width:100%;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.hero{
+
+    padding:120px 6%;
+
 }
 
 section{
-max-width:1100px;
-margin:auto;
-padding:80px 20px;
-}
 
-.title{
-font-size:38px;
-margin-bottom:30px;
-color:#60a5fa;
-}
-
-.card{
-background:#1e293b;
-padding:30px;
-border-radius:15px;
-margin-bottom:25px;
-}
-
-.skills{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-gap:15px;
-}
-
-.skill{
-background:#334155;
-padding:15px;
-text-align:center;
-border-radius:10px;
-font-weight:600;
-}
-
-.links{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.link-card{
-background:#1e293b;
-padding:25px;
-border-radius:12px;
-text-align:center;
-transition:.3s;
-}
-
-.link-card:hover{
-transform:translateY(-8px);
-}
-
-.link-card a{
-color:#60a5fa;
-text-decoration:none;
-font-weight:600;
-}
-
-.goal{
-margin:15px 0;
-padding-left:20px;
-}
-
-footer{
-padding:30px;
-text-align:center;
-background:#020617;
-color:#94a3b8;
-}
-
-@media(max-width:700px){
-
-header h1{
-font-size:38px;
-}
-
-header h2{
-font-size:18px;
-}
-
-.title{
-font-size:30px;
-}
+    padding:70px 6%;
 
 }
 
-</style>
+nav{
 
+    padding:18px 6%;
+
+}
+
+nav ul{
+
+    gap:18px;
+
+}
+
+.hero-image img{
+
+    width:220px;
+
+    height:220px;
+
+}
+
+.btn{
+
+    display:block;
+
+    margin:20px auto;
+
+}
+
+}
+</style>   
 </head>
 
 <body>
 
-<header>
+    <!-- Background -->
+    <div id="particles-js"></div>
 
-<div>
+    <!-- Navigation -->
+    <nav>
 
-<h1>Hi 👋<br>I'm <span style="color:#60a5fa;">Sanat Tripathi</span></h1>
+        <div class="logo">
+            Sanat Tripathi
+        </div>
 
-<h2>
-B.Tech CSE Student <br>
-Aspiring Cybersecurity Professional <br>
-Competitive Programmer
-</h2>
+        <ul>
 
-<a href="https://www.linkedin.com/in/sanat-tripathi/" class="btn" target="_blank">
-Connect on LinkedIn
-</a>
+            <li><a href="#home">Home</a></li>
 
-</div>
+            <li><a href="#about">About</a></li>
 
-</header>
+            <li><a href="#skills">Skills</a></li>
 
-<section>
+            <li><a href="#education">Education</a></li>
 
-<h2 class="title">👨‍💻 About Me</h2>
+            <li><a href="#projects">Projects</a></li>
 
-<div class="card">
+            <li><a href="#contact">Contact</a></li>
 
-<p>
+        </ul>
 
-I'm a Computer Science Engineering student passionate about Cybersecurity, Web Development, Linux, Networking, and Competitive Programming.
+        <div class="theme-btn">
+            <i class="fa-solid fa-moon"></i>
+        </div>
 
-I'm constantly learning new technologies, solving coding challenges, and building projects to become a skilled Security Engineer.
+    </nav>
 
-</p>
+    <!-- Hero -->
 
-</div>
+    <section id="home" class="hero">
 
-</section>
+        <div class="hero-text" data-aos="fade-right">
 
-<section>
+            <h3>Hello, I'm</h3>
 
-<h2 class="title">🛠 Tech Stack</h2>
+            <h1>Sanat Tripathi</h1>
 
-<div class="skills">
+            <h2>
+                <span id="typing"></span>
+            </h2>
 
-<div class="skill">C++</div>
-<div class="skill">HTML</div>
-<div class="skill">CSS</div>
-<div class="skill">JavaScript</div>
-<div class="skill">Python</div>
-<div class="skill">Git</div>
-<div class="skill">GitHub</div>
-<div class="skill">Linux</div>
-<div class="skill">VS Code</div>
-<div class="skill">MySQL</div>
+            <p>
 
-</div>
+                B.Tech CSE Student specializing in
+                <strong>Track 1 – Data Visualization & AI/ML</strong>.
 
-</section>
+                Passionate about Python, Machine Learning,
+                Data Science and Competitive Programming.
 
-<section>
+            </p>
 
-<h2 class="title">🏆 Coding Profiles</h2>
+            <a href="#projects" class="btn">
+                View Projects
+            </a>
 
-<div class="links">
+            <a href="resume.pdf" class="btn secondary">
+                Download Resume
+            </a>
 
-<div class="link-card">
-<h3>LinkedIn</h3>
-<br>
-<a href="https://www.linkedin.com/in/sanat-tripathi/" target="_blank">
-Visit Profile
-</a>
-</div>
+        </div>
 
-<div class="link-card">
-<h3>CodeChef</h3>
-<br>
-<a href="https://www.codechef.com/users/cse25_0288" target="_blank">
-Visit Profile
-</a>
-</div>
+        <div class="hero-image" data-aos="zoom-in">
 
-<div class="link-card">
-<h3>LeetCode</h3>
-<br>
-<a href="https://leetcode.com/u/CSE25_2025B01010288/" target="_blank">
-Visit Profile
-</a>
-</div>
+            <img src="assets/profile.jpg" alt="Profile">
 
-<div class="link-card">
-<h3>HackerRank</h3>
-<br>
-<a href="https://www.hackerrank.com/profile/CSE25_0288" target="_blank">
-Visit Profile
-</a>
-</div>
+        </div>
 
-</div>
+    </section>
 
-</section>
+    <!-- About -->
 
-<section>
+    <section id="about">
 
-<h2 class="title">📚 Currently Learning</h2>
+        <h2 class="section-title">
+            About Me
+        </h2>
 
-<div class="card">
+        <div class="about-container">
 
-<ul>
+            <div class="glass-card">
 
-<li>Data Structures & Algorithms</li>
-<li>Operating System</li>
-<li>Computer Networks</li>
-<li>DBMS</li>
-<li>Linux</li>
-<li>Cybersecurity Fundamentals</li>
-<li>Web Development</li>
+                <p>
 
-</ul>
+                    I am a Computer Science Engineering student with a strong
+                    interest in Artificial Intelligence, Machine Learning,
+                    Data Visualization and Python.
 
-</div>
+                    I enjoy solving coding challenges on LeetCode,
+                    CodeChef and HackerRank while continuously building
+                    projects that strengthen my development and AI skills.
 
-</section>
+                </p>
 
-<section>
+            </div>
 
-<h2 class="title">🎯 2026 Goals</h2>
+        </div>
 
-<div class="card">
+    </section>
 
-<ul class="goal">
+    <!-- Skills -->
 
-<li>Solve 500+ DSA Problems</li>
-<li>Master C++</li>
-<li>Learn Python for Cybersecurity</li>
-<li>Master Linux & Networking</li>
-<li>Start Bug Bounty Hunting</li>
-<li>Build Real-world Security Projects</li>
-<li>Earn Industry Certifications</li>
+    <section id="skills">
 
-</ul>
+        <h2 class="section-title">
 
-</div>
+            Skills
 
-</section>
+        </h2>
 
-<section>
+        <div class="skills-grid">
 
-<h2 class="title">💬 Quote</h2>
+            <div class="skill-card">Python</div>
 
-<div class="card">
+            <div class="skill-card">C++</div>
 
-<h3 style="text-align:center;color:#60a5fa;">
-"Consistency beats talent when talent doesn't work consistently."
-</h3>
+            <div class="skill-card">HTML</div>
 
-</div>
+            <div class="skill-card">CSS</div>
 
-</section>
+            <div class="skill-card">JavaScript</div>
 
-<footer>
+            <div class="skill-card">Git</div>
 
-<h3>⭐ Thanks for visiting my portfolio!</h3>
+            <div class="skill-card">GitHub</div>
 
-<p>Made with ❤️ by Sanat Tripathi</p>
+            <div class="skill-card">NumPy</div>
 
-</footer>
+            <div class="skill-card">Pandas</div>
+
+            <div class="skill-card">Matplotlib</div>
+
+            <div class="skill-card">Scikit-Learn</div>
+
+            <div class="skill-card">VS Code</div>
+
+        </div>
+
+    </section>
+
+    <!-- Education -->
+
+    <section id="education">
+
+        <h2 class="section-title">
+
+            Education
+
+        </h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <h3>B.Tech Computer Science Engineering</h3>
+
+                <p>ABES Engineering College</p>
+
+                <p>2025 – 2029</p>
+
+                <p>
+
+                    Professional Track:
+                    Data Visualization & AI/ML
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Projects -->
+
+    <section id="projects">
+
+        <h2 class="section-title">
+
+            Projects
+
+        </h2>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+
+                <h3>Portfolio Website</h3>
+
+                <p>Responsive personal portfolio built using HTML, CSS & JavaScript.</p>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>Amazon Clone</h3>
+
+                <p>Frontend clone built using HTML & CSS.</p>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>Future AI Projects</h3>
+
+                <p>Machine Learning and Data Science projects coming soon.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Coding Profiles -->
+
+    <section>
+
+        <h2 class="section-title">
+
+            Coding Profiles
+
+        </h2>
+
+        <div class="profiles">
+
+            <a href="https://www.linkedin.com/in/sanat-tripathi/" target="_blank">
+
+                <i class="fab fa-linkedin"></i>
+
+                LinkedIn
+
+            </a>
+
+            <a href="https://leetcode.com/u/CSE25_2025B01010288/" target="_blank">
+
+                <i class="fas fa-code"></i>
+
+                LeetCode
+
+            </a>
+
+            <a href="https://www.codechef.com/users/cse25_0288" target="_blank">
+
+                <i class="fas fa-laptop-code"></i>
+
+                CodeChef
+
+            </a>
+
+            <a href="https://www.hackerrank.com/profile/CSE25_0288" target="_blank">
+
+                <i class="fab fa-hackerrank"></i>
+
+                HackerRank
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+
+    <section id="contact">
+
+        <h2 class="section-title">
+
+            Contact
+
+        </h2>
+
+        <div class="contact-box">
+
+            <p>
+
+                Interested in collaborating or discussing AI/ML,
+                software development or projects?
+
+            </p>
+
+            <a href="https://www.linkedin.com/in/sanat-tripathi/" class="btn">
+
+                Contact Me
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        © 2026 Sanat Tripathi
+
+        <br>
+
+        Built with ❤️ using HTML, CSS & JavaScript
+
+    </footer>
+
+    <!-- Libraries -->
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script src="script.js"></script>
 
 </body>
+
+</html><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sanat Tripathi | AI & ML Portfolio</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav>
+
+        <div class="logo">
+            Sanat Tripathi
+        </div>
+
+        <ul>
+
+            <li><a href="#home">Home</a></li>
+
+            <li><a href="#about">About</a></li>
+
+            <li><a href="#skills">Skills</a></li>
+
+            <li><a href="#education">Education</a></li>
+
+            <li><a href="#projects">Projects</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+        <div class="theme-btn">
+            <i class="fa-solid fa-moon"></i>
+        </div>
+
+    </nav>
+
+    <!-- Hero -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-text" data-aos="fade-right">
+
+            <h3>Hello, I'm</h3>
+
+            <h1>Sanat Tripathi</h1>
+
+            <h2>
+                <span id="typing"></span>
+            </h2>
+
+            <p>
+
+                B.Tech CSE Student specializing in
+                <strong>Track 1 – Data Visualization & AI/ML</strong>.
+
+                Passionate about Python, Machine Learning,
+                Data Science and Competitive Programming.
+
+            </p>
+
+            <a href="#projects" class="btn">
+                View Projects
+            </a>
+
+            <a href="resume.pdf" class="btn secondary">
+                Download Resume
+            </a>
+
+        </div>
+
+        <div class="hero-image" data-aos="zoom-in">
+
+            <img src="assets/profile.jpg" alt="Profile">
+
+        </div>
+
+    </section>
+
+    <!-- About -->
+
+    <section id="about">
+
+        <h2 class="section-title">
+            About Me
+        </h2>
+
+        <div class="about-container">
+
+            <div class="glass-card">
+
+                <p>
+
+                    I am a Computer Science Engineering student with a strong
+                    interest in Artificial Intelligence, Machine Learning,
+                    Data Visualization and Python.
+
+                    I enjoy solving coding challenges on LeetCode,
+                    CodeChef and HackerRank while continuously building
+                    projects that strengthen my development and AI skills.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Skills -->
+
+    <section id="skills">
+
+        <h2 class="section-title">
+
+            Skills
+
+        </h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">Python</div>
+
+            <div class="skill-card">C++</div>
+
+            <div class="skill-card">HTML</div>
+
+            <div class="skill-card">CSS</div>
+
+            <div class="skill-card">JavaScript</div>
+
+            <div class="skill-card">Git</div>
+
+            <div class="skill-card">GitHub</div>
+
+            <div class="skill-card">NumPy</div>
+
+            <div class="skill-card">Pandas</div>
+
+            <div class="skill-card">Matplotlib</div>
+
+            <div class="skill-card">Scikit-Learn</div>
+
+            <div class="skill-card">VS Code</div>
+
+        </div>
+
+    </section>
+
+    <!-- Education -->
+
+    <section id="education">
+
+        <h2 class="section-title">
+
+            Education
+
+        </h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <h3>B.Tech Computer Science Engineering</h3>
+
+                <p>ABES Engineering College</p>
+
+                <p>2025 – 2029</p>
+
+                <p>
+
+                    Professional Track:
+                    Data Visualization & AI/ML
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Projects -->
+
+    <section id="projects">
+
+        <h2 class="section-title">
+
+            Projects
+
+        </h2>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+
+                <h3>Portfolio Website</h3>
+
+                <p>Responsive personal portfolio built using HTML, CSS & JavaScript.</p>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>Amazon Clone</h3>
+
+                <p>Frontend clone built using HTML & CSS.</p>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>Future AI Projects</h3>
+
+                <p>Machine Learning and Data Science projects coming soon.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Coding Profiles -->
+
+    <section>
+
+        <h2 class="section-title">
+
+            Coding Profiles
+
+        </h2>
+
+        <div class="profiles">
+
+            <a href="https://www.linkedin.com/in/sanat-tripathi/" target="_blank">
+
+                <i class="fab fa-linkedin"></i>
+
+                LinkedIn
+
+            </a>
+
+            <a href="https://leetcode.com/u/CSE25_2025B01010288/" target="_blank">
+
+                <i class="fas fa-code"></i>
+
+                LeetCode
+
+            </a>
+
+            <a href="https://www.codechef.com/users/cse25_0288" target="_blank">
+
+                <i class="fas fa-laptop-code"></i>
+
+                CodeChef
+
+            </a>
+
+            <a href="https://www.hackerrank.com/profile/CSE25_0288" target="_blank">
+
+                <i class="fab fa-hackerrank"></i>
+
+                HackerRank
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+
+    <section id="contact">
+
+        <h2 class="section-title">
+
+            Contact
+
+        </h2>
+
+        <div class="contact-box">
+
+            <p>
+
+                Interested in collaborating or discussing AI/ML,
+                software development or projects?
+
+            </p>
+
+            <a href="https://www.linkedin.com/in/sanat-tripathi/" class="btn">
+
+                Contact Me
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        © 2026 Sanat Tripathi
+
+        <br>
+
+        Built with ❤️ using HTML, CSS & JavaScript
+
+    </footer>
+
+    <!-- Libraries -->
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script src="script.js">
+        // ==========================
+// AOS Animation
+// ==========================
+AOS.init({
+    duration: 1000,
+    once: true,
+    easing: "ease-in-out"
+});
+
+// ==========================
+// Typing Animation
+// ==========================
+new Typed("#typing", {
+    strings: [
+        "AI & Machine Learning Enthusiast",
+        "Python Developer",
+        "Data Visualization Learner",
+        "Competitive Programmer",
+        "Future AI Engineer"
+    ],
+    typeSpeed: 70,
+    backSpeed: 40,
+    backDelay: 1500,
+    loop: true
+});
+
+// ==========================
+// Particles Background
+// ==========================
+particlesJS("particles-js", {
+    particles: {
+        number: {
+            value: 80,
+            density: {
+                enable: true,
+                value_area: 800
+            }
+        },
+
+        color: {
+            value: "#38bdf8"
+        },
+
+        shape: {
+            type: "circle"
+        },
+
+        opacity: {
+            value: 0.5
+        },
+
+        size: {
+            value: 3
+        },
+
+        line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#38bdf8",
+            opacity: 0.3,
+            width: 1
+        },
+
+        move: {
+            enable: true,
+            speed: 2
+        }
+    },
+
+    interactivity: {
+        detect_on: "canvas",
+
+        events: {
+            onhover: {
+                enable: true,
+                mode: "grab"
+            },
+
+            onclick: {
+                enable: true,
+                mode: "push"
+            }
+        },
+
+        modes: {
+            grab: {
+                distance: 140,
+                line_linked: {
+                    opacity: 1
+                }
+            },
+
+            push: {
+                particles_nb: 4
+            }
+        }
+    },
+
+    retina_detect: true
+});
+
+// ==========================
+// Dark / Light Theme Toggle
+// ==========================
+const themeBtn = document.querySelector(".theme-btn");
+
+themeBtn.addEventListener("click", () => {
+
+    document.body.classList.toggle("light-mode");
+
+    const icon = themeBtn.querySelector("i");
+
+    if (document.body.classList.contains("light-mode")) {
+
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+
+    } else {
+
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon");
+    }
+
+});
+
+// ==========================
+// Navbar Scroll Effect
+// ==========================
+const navbar = document.querySelector("nav");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 80) {
+
+        navbar.style.background = "rgba(15,23,42,0.95)";
+        navbar.style.boxShadow = "0 5px 15px rgba(0,0,0,0.3)";
+
+    } else {
+
+        navbar.style.background = "rgba(15,23,42,0.75)";
+        navbar.style.boxShadow = "none";
+    }
+
+});
+
+// ==========================
+// Active Navigation Link
+// ==========================
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll("nav ul li a");
+
+window.addEventListener("scroll", () => {
+
+    let current = "";
+
+    sections.forEach(section => {
+
+        const sectionTop = section.offsetTop - 120;
+        const sectionHeight = section.clientHeight;
+
+        if (pageYOffset >= sectionTop) {
+            current = section.getAttribute("id");
+        }
+
+    });
+
+    navLinks.forEach(link => {
+
+        link.classList.remove("active");
+
+        if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+        }
+
+    });
+
+});
+
+// ==========================
+// Smooth Button Animation
+// ==========================
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+    anchor.addEventListener("click", function (e) {
+
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+
+            behavior: "smooth"
+
+        });
+
+    });
+
+});
+
+// ==========================
+// Hero Image Floating Effect
+// ==========================
+const heroImage = document.querySelector(".hero-image img");
+
+let direction = 1;
+
+setInterval(() => {
+
+    heroImage.style.transform = `translateY(${direction * 10}px)`;
+
+    direction *= -1;
+
+}, 1500);
+
+// ==========================
+// Reveal Cards on Hover
+// ==========================
+const cards = document.querySelectorAll(".skill-card, .project-card, .glass-card");
+
+cards.forEach(card => {
+
+    card.addEventListener("mouseenter", () => {
+
+        card.style.transform = "translateY(-10px) scale(1.03)";
+
+    });
+
+    card.addEventListener("mouseleave", () => {
+
+        card.style.transform = "translateY(0) scale(1)";
+
+    });
+
+});
+
+// ==========================
+// Console Message
+// ==========================
+console.log("%cWelcome to Sanat Tripathi's Portfolio!",
+"color:#38bdf8;font-size:18px;font-weight:bold;");
+
+    </script>
+
+</body>
+
 </html>
