@@ -39,7 +39,7 @@ Become an AI/ML Engineer while building impactful projects and contributing to O
 <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin"/>
 </a>
 
-<a href="https://leetcode.com/u/CSE25_2025B01010288/" target="_blank">
+<a href="https://leetcode.com/u/CSE_0288/" target="_blank">
 <img src="https://img.shields.io/badge/LeetCode-orange?style=for-the-badge&logo=leetcode"/>
 </a>
 
