@@ -102,7 +102,7 @@ https://www.codechef.com/users/cse25_0288
 🚀 Regular DSA Practice
 
 Profile:
-https://leetcode.com/u/CSE25_2025B01010288/
+https://leetcode.com/u/CSE25_0288/
 
 ---
 
