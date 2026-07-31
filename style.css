@@ -1565,3 +1565,78 @@ RESPONSIVE
 }
 
 }
+/* ==============================
+   Contact Links
+============================== */
+
+.contact-links{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.contact-links h3{
+
+    font-size:32px;
+
+    color:#00d9ff;
+
+}
+
+.contact-links p{
+
+    color:#cbd5e1;
+
+    line-height:1.8;
+
+    margin-bottom:15px;
+
+}
+
+.contact-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:18px 25px;
+
+    background:rgba(255,255,255,.05);
+
+    border-radius:15px;
+
+    text-decoration:none;
+
+    color:white;
+
+    transition:.4s;
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid transparent;
+
+}
+
+.contact-btn i{
+
+    font-size:22px;
+
+    color:#00d9ff;
+
+}
+
+.contact-btn:hover{
+
+    transform:translateX(10px);
+
+    border:1px solid #00d9ff;
+
+    box-shadow:0 10px 25px rgba(0,217,255,.25);
+
+}
