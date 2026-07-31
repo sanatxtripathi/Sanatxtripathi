@@ -4,616 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Sanat Tripathi | AI & ML Portfolio</title>
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <!-- AOS Animation -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-><style>
-    /* ===========================
-   Google Font
-=========================== */
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    scroll-behavior:smooth;
-    font-family:'Poppins',sans-serif;
-}
-
-body{
-    background:#0f172a;
-    color:#fff;
-    overflow-x:hidden;
-}
-
-/* ===========================
-Particles
-=========================== */
-
-#particles-js{
-    position:fixed;
-    width:100%;
-    height:100%;
-    z-index:-1;
-    top:0;
-    left:0;
-}
-
-/* ===========================
-Navigation
-=========================== */
-
-nav{
-
-    width:100%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    padding:18px 10%;
-
-    position:fixed;
-    top:0;
-    z-index:999;
-
-    background:rgba(15,23,42,.75);
-    backdrop-filter:blur(10px);
-
-}
-
-.logo{
-
-    font-size:28px;
-    font-weight:700;
-    color:#38bdf8;
-
-}
-
-nav ul{
-
-    display:flex;
-    list-style:none;
-    gap:35px;
-
-}
-
-nav ul li a{
-
-    text-decoration:none;
-    color:white;
-    transition:.3s;
-
-}
-
-nav ul li a:hover{
-
-    color:#38bdf8;
-
-}
-
-.theme-btn{
-
-    font-size:22px;
-    cursor:pointer;
-
-}
-
-/* ===========================
-Hero
-=========================== */
-
-.hero{
-
-    min-height:100vh;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:120px 10%;
-    gap:60px;
-
-}
-
-.hero-text{
-
-    flex:1;
-
-}
-
-.hero-text h3{
-
-    font-size:25px;
-    color:#38bdf8;
-
-}
-
-.hero-text h1{
-
-    font-size:70px;
-    margin:15px 0;
-
-}
-
-.hero-text h2{
-
-    color:#60a5fa;
-    margin-bottom:25px;
-    min-height:45px;
-
-}
-
-.hero-text p{
-
-    font-size:18px;
-    color:#d1d5db;
-    line-height:1.8;
-
-}
-
-.hero-image{
-
-    flex:1;
-    display:flex;
-    justify-content:center;
-
-}
-
-.hero-image img{
-
-    width:330px;
-    height:330px;
-
-    border-radius:50%;
-    border:6px solid #38bdf8;
-
-    object-fit:cover;
-
-    box-shadow:0 0 40px #38bdf8;
-
-    transition:.5s;
-
-}
-
-.hero-image img:hover{
-
-    transform:scale(1.05);
-
-}
-
-/* ===========================
-Buttons
-=========================== */
-
-.btn{
-
-    display:inline-block;
-    margin-top:35px;
-    padding:15px 35px;
-
-    text-decoration:none;
-
-    background:#38bdf8;
-
-    color:#fff;
-
-    border-radius:10px;
-
-    transition:.4s;
-
-    margin-right:15px;
-
-}
-
-.btn:hover{
-
-    transform:translateY(-5px);
-
-    background:#2563eb;
-
-}
-
-.secondary{
-
-    background:transparent;
-
-    border:2px solid #38bdf8;
-
-}
-
-/* ===========================
-Sections
-=========================== */
-
-section{
-
-    padding:90px 10%;
-
-}
-
-.section-title{
-
-    font-size:40px;
-
-    text-align:center;
-
-    margin-bottom:50px;
-
-    color:#38bdf8;
-
-}
-
-/* ===========================
-Glass Card
-=========================== */
-
-.glass-card{
-
-    background:rgba(255,255,255,.08);
-
-    padding:35px;
-
-    border-radius:20px;
-
-    backdrop-filter:blur(15px);
-
-    border:1px solid rgba(255,255,255,.15);
-
-    transition:.4s;
-
-}
-
-.glass-card:hover{
-
-    transform:translateY(-10px);
-
-}
-
-/* ===========================
-Skills
-=========================== */
-
-.skills-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-
-    gap:25px;
-
-}
-
-.skill-card{
-
-    background:#1e293b;
-
-    padding:30px;
-
-    text-align:center;
-
-    border-radius:15px;
-
-    transition:.4s;
-
-    font-weight:600;
-
-}
-
-.skill-card:hover{
-
-    background:#2563eb;
-
-    transform:translateY(-10px);
-
-}
-
-/* ===========================
-Timeline
-=========================== */
-
-.timeline{
-
-    display:flex;
-
-    justify-content:center;
-
-}
-
-.timeline-item{
-
-    background:#1e293b;
-
-    padding:30px;
-
-    border-left:5px solid #38bdf8;
-
-    border-radius:15px;
-
-    width:600px;
-
-}
-
-.timeline-item h3{
-
-    color:#38bdf8;
-
-    margin-bottom:10px;
-
-}
-
-/* ===========================
-Projects
-=========================== */
-
-.project-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-
-    gap:30px;
-
-}
-
-.project-card{
-
-    background:#1e293b;
-
-    border-radius:20px;
-
-    padding:30px;
-
-    transition:.4s;
-
-}
-
-.project-card:hover{
-
-    transform:translateY(-12px);
-
-    box-shadow:0 0 20px #38bdf8;
-
-}
-
-.project-card h3{
-
-    color:#38bdf8;
-
-    margin-bottom:15px;
-
-}
-
-/* ===========================
-Profiles
-=========================== */
-
-.profiles{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-
-    gap:20px;
-
-}
-
-.profiles a{
-
-    text-decoration:none;
-
-    color:white;
-
-    background:#1e293b;
-
-    padding:25px;
-
-    border-radius:15px;
-
-    text-align:center;
-
-    transition:.4s;
-
-    font-size:18px;
-
-}
-
-.profiles a:hover{
-
-    background:#2563eb;
-
-    transform:translateY(-8px);
-
-}
-
-.profiles i{
-
-    display:block;
-
-    font-size:35px;
-
-    margin-bottom:12px;
-
-}
-
-/* ===========================
-Contact
-=========================== */
-
-.contact-box{
-
-    text-align:center;
-
-    background:#1e293b;
-
-    padding:50px;
-
-    border-radius:20px;
-
-}
-
-.contact-box p{
-
-    margin-bottom:25px;
-
-}
-
-/* ===========================
-Footer
-=========================== */
-
-footer{
-
-    text-align:center;
-
-    padding:30px;
-
-    background:#020617;
-
-    color:#94a3b8;
-
-}
-
-/* ===========================
-Responsive
-=========================== */
-
-@media(max-width:992px){
-
-.hero{
-
-    flex-direction:column-reverse;
-
-    text-align:center;
-
-}
-
-.hero-image img{
-
-    width:260px;
-
-    height:260px;
-
-}
-
-.hero-text h1{
-
-    font-size:50px;
-
-}
-
-nav{
-
-    flex-direction:column;
-
-    gap:15px;
-
-}
-
-nav ul{
-
-    flex-wrap:wrap;
-
-    justify-content:center;
-
-}
-
-}
-
-@media(max-width:768px){
-
-.hero-text h1{
-
-    font-size:40px;
-
-}
-
-.hero-text h2{
-
-    font-size:24px;
-
-}
-
-.section-title{
-
-    font-size:32px;
-
-}
-
-.timeline-item{
-
-    width:100%;
-
-}
-
-}
-
-@media(max-width:500px){
-
-.hero{
-
-    padding:120px 6%;
-
-}
-
-section{
-
-    padding:70px 6%;
-
-}
-
-nav{
-
-    padding:18px 6%;
-
-}
-
-nav ul{
-
-    gap:18px;
-
-}
-
-.hero-image img{
-
-    width:220px;
-
-    height:220px;
-
-}
-
-.btn{
-
-    display:block;
-
-    margin:20px auto;
-
-}
-
-}
-</style>   
+    <!-- Typed JS -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 
 <body>
 
-    <!-- Background -->
-    <div id="particles-js"></div>
+    <!-- Loader -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Scroll Progress -->
+    <div id="progress-bar"></div>
 
     <!-- Navigation -->
-    <nav>
+
+    <nav class="navbar">
 
         <div class="logo">
-            Sanat Tripathi
+            <span>Sanat</span>Tripathi
         </div>
 
-        <ul>
+        <ul class="nav-links">
 
             <li><a href="#home">Home</a></li>
 
@@ -621,27 +51,27 @@ nav ul{
 
             <li><a href="#skills">Skills</a></li>
 
-            <li><a href="#education">Education</a></li>
-
             <li><a href="#projects">Projects</a></li>
+
+            <li><a href="#coding">Coding</a></li>
 
             <li><a href="#contact">Contact</a></li>
 
         </ul>
 
         <div class="theme-btn">
-            <i class="fa-solid fa-moon"></i>
+            <i class="fas fa-moon"></i>
         </div>
 
     </nav>
 
-    <!-- Hero -->
+    <!-- Hero Section -->
 
     <section id="home" class="hero">
 
-        <div class="hero-text" data-aos="fade-right">
+        <div class="hero-content" data-aos="fade-right">
 
-            <h3>Hello, I'm</h3>
+            <h3>Hello 👋 I'm</h3>
 
             <h1>Sanat Tripathi</h1>
 
@@ -651,55 +81,126 @@ nav ul{
 
             <p>
 
-                B.Tech CSE Student specializing in
-                <strong>Track 1 – Data Visualization & AI/ML</strong>.
-
-                Passionate about Python, Machine Learning,
-                Data Science and Competitive Programming.
+                Passionate AI & Machine Learning student who enjoys building
+                intelligent applications, solving Data Structures &
+                Algorithms problems and creating modern responsive web
+                applications.
 
             </p>
 
-            <a href="#projects" class="btn">
-                View Projects
-            </a>
+            <div class="hero-buttons">
 
-            <a href="resume.pdf" class="btn secondary">
-                Download Resume
-            </a>
+                <a href="#projects" class="btn">
+                    View Projects
+                </a>
+
+                <a href="resume.pdf" class="btn-outline" download>
+                    Download Resume
+                </a>
+
+            </div>
+
+            <div class="social-icons">
+
+                <a href="https://github.com/sanatxtripathi"
+                    target="_blank">
+
+                    <i class="fab fa-github"></i>
+
+                </a>
+
+                <a href="https://www.linkedin.com/in/sanat-tripathi/"
+                    target="_blank">
+
+                    <i class="fab fa-linkedin"></i>
+
+                </a>
+
+                <a href="https://leetcode.com/u/CSE25_2025B01010288/"
+                    target="_blank">
+
+                    <i class="fas fa-code"></i>
+
+                </a>
+
+                <a href="https://www.codechef.com/users/cse25_0288"
+                    target="_blank">
+
+                    <i class="fas fa-laptop-code"></i>
+
+                </a>
+
+            </div>
 
         </div>
 
         <div class="hero-image" data-aos="zoom-in">
 
-            <img src="assets/profile.jpg" alt="Profile">
+            <img src="assets/profile.jpg" alt="Profile Image">
 
         </div>
 
     </section>
+        <!-- ================= ABOUT ================= -->
 
-    <!-- About -->
+    <section id="about" class="about section">
 
-    <section id="about">
-
-        <h2 class="section-title">
-            About Me
-        </h2>
+        <div class="section-title" data-aos="fade-up">
+            <h2>About Me</h2>
+            <p>Who I Am</p>
+        </div>
 
         <div class="about-container">
 
-            <div class="glass-card">
+            <div class="about-image" data-aos="fade-right">
+                <img src="assets/profile.jpg" alt="Sanat Tripathi">
+            </div>
+
+            <div class="about-content" data-aos="fade-left">
+
+                <h3>AI & Machine Learning Enthusiast</h3>
 
                 <p>
-
-                    I am a Computer Science Engineering student with a strong
-                    interest in Artificial Intelligence, Machine Learning,
-                    Data Visualization and Python.
-
-                    I enjoy solving coding challenges on LeetCode,
-                    CodeChef and HackerRank while continuously building
-                    projects that strengthen my development and AI skills.
-
+                    Hello! I'm <strong>Sanat Tripathi</strong>, a B.Tech Computer
+                    Science student passionate about Artificial Intelligence,
+                    Machine Learning, Web Development and Competitive Programming.
                 </p>
+
+                <p>
+                    I enjoy solving challenging coding problems, building modern
+                    web applications, and exploring AI technologies that solve
+                    real-world problems.
+                </p>
+
+                <p>
+                    My goal is to become an AI/ML Engineer and contribute to
+                    impactful products through innovation, continuous learning,
+                    and teamwork.
+                </p>
+
+                <div class="about-info">
+
+                    <div>
+                        <h4>Name</h4>
+                        <p>Sanat Tripathi</p>
+                    </div>
+
+                    <div>
+                        <h4>Degree</h4>
+                        <p>B.Tech CSE</p>
+                    </div>
+
+                    <div>
+                        <h4>Focus</h4>
+                        <p>AI & Machine Learning</p>
+                    </div>
+
+                    <div>
+                        <h4>Location</h4>
+                        <p>Ghaziabad, India</p>
+                    </div>
+
+                </div>
 
             </div>
 
@@ -707,72 +208,56 @@ nav ul{
 
     </section>
 
-    <!-- Skills -->
+    <!-- ================= EDUCATION ================= -->
 
-    <section id="skills">
+    <section id="education" class="education section">
 
-        <h2 class="section-title">
+        <div class="section-title" data-aos="fade-up">
 
-            Skills
-
-        </h2>
-
-        <div class="skills-grid">
-
-            <div class="skill-card">Python</div>
-
-            <div class="skill-card">C++</div>
-
-            <div class="skill-card">HTML</div>
-
-            <div class="skill-card">CSS</div>
-
-            <div class="skill-card">JavaScript</div>
-
-            <div class="skill-card">Git</div>
-
-            <div class="skill-card">GitHub</div>
-
-            <div class="skill-card">NumPy</div>
-
-            <div class="skill-card">Pandas</div>
-
-            <div class="skill-card">Matplotlib</div>
-
-            <div class="skill-card">Scikit-Learn</div>
-
-            <div class="skill-card">VS Code</div>
+            <h2>Education</h2>
+            <p>Academic Journey</p>
 
         </div>
-
-    </section>
-
-    <!-- Education -->
-
-    <section id="education">
-
-        <h2 class="section-title">
-
-            Education
-
-        </h2>
 
         <div class="timeline">
 
-            <div class="timeline-item">
+            <div class="timeline-item" data-aos="fade-right">
 
-                <h3>B.Tech Computer Science Engineering</h3>
+                <div class="timeline-dot"></div>
 
-                <p>ABES Engineering College</p>
+                <div class="timeline-content">
 
-                <p>2025 – 2029</p>
+                    <h3>B.Tech Computer Science & Engineering</h3>
 
-                <p>
+                    <span>ABES Engineering College</span>
 
-                    Professional Track:
-                    Data Visualization & AI/ML
+                    <p>
+                        Currently pursuing Computer Science Engineering with a
+                        specialization track in Artificial Intelligence &
+                        Machine Learning.
+                    </p>
 
-                </p>
+                </div>
+
+            </div>
+
+            <div class="timeline-item" data-aos="fade-left">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <h3>Career Goal</h3>
+
+                    <span>AI/ML Engineer</span>
+
+                    <p>
+                        Building expertise in Machine Learning, Python,
+                        Deep Learning, Data Structures & Algorithms,
+                        and Full Stack Development.
+                    </p>
+
+                </div>
 
             </div>
 
@@ -780,727 +265,495 @@ nav ul{
 
     </section>
 
-    <!-- Projects -->
+    <!-- ================= SKILLS ================= -->
 
-    <section id="projects">
+    <section id="skills" class="skills section">
 
-        <h2 class="section-title">
+        <div class="section-title" data-aos="fade-up">
 
-            Projects
+            <h2>Skills</h2>
+            <p>Technologies I Work With</p>
 
-        </h2>
+        </div>
 
-        <div class="project-grid">
+        <div class="skills-container">
 
-            <div class="project-card">
-
-                <h3>Portfolio Website</h3>
-
-                <p>Responsive personal portfolio built using HTML, CSS & JavaScript.</p>
-
+            <div class="skill-card" data-aos="zoom-in">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
             </div>
 
-            <div class="project-card">
+            <div class="skill-card" data-aos="zoom-in">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS3</h3>
+            </div>
+
+            <div class="skill-card" data-aos="zoom-in">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+            </div>
+
+            <div class="skill-card" data-aos="zoom-in">
+                <i class="fab fa-python"></i>
+                <h3>Python</h3>
+            </div>
+
+            <div class="skill-card" data-aos="zoom-in">
+                <i class="fas fa-code"></i>
+                <h3>C++</h3>
+            </div>
+
+            <div class="skill-card" data-aos="zoom-in">
+                <i class="fab fa-git-alt"></i>
+                <h3>Git</h3>
+            </div>
+
+            <div class="skill-card" data-aos="zoom-in">
+                <i class="fab fa-github"></i>
+                <h3>GitHub</h3>
+            </div>
+
+            <div class="skill-card" data-aos="zoom-in">
+                <i class="fas fa-brain"></i>
+                <h3>Machine Learning</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= AI / ML ================= -->
+
+    <section class="aiml section">
+
+        <div class="section-title" data-aos="fade-up">
+
+            <h2>AI & Machine Learning Journey</h2>
+
+            <p>Current Learning Path</p>
+
+        </div>
+
+        <div class="roadmap">
+
+            <div class="roadmap-card" data-aos="fade-up">
+                <i class="fas fa-robot"></i>
+                <h3>Artificial Intelligence</h3>
+                <p>Learning AI concepts and intelligent systems.</p>
+            </div>
+
+            <div class="roadmap-card" data-aos="fade-up">
+                <i class="fas fa-chart-line"></i>
+                <h3>Machine Learning</h3>
+                <p>Regression, Classification, Clustering and Model Building.</p>
+            </div>
+
+            <div class="roadmap-card" data-aos="fade-up">
+                <i class="fas fa-database"></i>
+                <h3>Data Science</h3>
+                <p>Working with NumPy, Pandas and Data Visualization.</p>
+            </div>
+
+            <div class="roadmap-card" data-aos="fade-up">
+                <i class="fas fa-microchip"></i>
+                <h3>Deep Learning</h3>
+                <p>Learning Neural Networks and Computer Vision.</p>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ================= PROJECTS ================= -->
+
+<section id="projects" class="projects section">
+
+    <div class="section-title" data-aos="fade-up">
+        <h2>Featured Projects</h2>
+        <p>Things I've Built</p>
+    </div>
+
+    <div class="project-container">
+
+        <!-- Amazon Clone -->
+
+        <div class="project-card" data-aos="zoom-in">
+
+            <div class="project-image">
+                <img src="assets/amazon.png" alt="Amazon Clone">
+            </div>
+
+            <div class="project-content">
 
                 <h3>Amazon Clone</h3>
 
-                <p>Frontend clone built using HTML & CSS.</p>
+                <p>
+                    A responsive Amazon-inspired e-commerce frontend built using
+                    HTML, CSS and JavaScript with a clean UI and responsive layout.
+                </p>
+
+                <div class="tech-stack">
+
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+
+                </div>
+
+                <div class="project-buttons">
+
+                    <a href="https://github.com/sanatxtripathi/Project"
+                        target="_blank" class="btn">
+
+                        GitHub
+
+                    </a>
+
+                </div>
 
             </div>
 
-            <div class="project-card">
+        </div>
 
-                <h3>Future AI Projects</h3>
+        <!-- Future Project -->
 
-                <p>Machine Learning and Data Science projects coming soon.</p>
+        <div class="project-card" data-aos="zoom-in">
+
+            <div class="project-image">
+
+                <img src="assets/ai.jpg" alt="AI Project">
+
+            </div>
+
+            <div class="project-content">
+
+                <h3>AI / ML Projects</h3>
+
+                <p>
+
+                    This section will include upcoming Artificial Intelligence
+                    and Machine Learning projects such as image classification,
+                    fake news detection and predictive analytics.
+
+                </p>
+
+                <div class="tech-stack">
+
+                    <span>Python</span>
+
+                    <span>Machine Learning</span>
+
+                    <span>AI</span>
+
+                </div>
 
             </div>
 
         </div>
 
-    </section>
+    </div>
 
-    <!-- Coding Profiles -->
+</section>
 
-    <section>
+<!-- ================= CODING PROFILES ================= -->
 
-        <h2 class="section-title">
+<section id="coding" class="coding section">
 
-            Coding Profiles
+    <div class="section-title">
 
-        </h2>
+        <h2>Coding Profiles</h2>
 
-        <div class="profiles">
+        <p>Competitive Programming</p>
 
-            <a href="https://www.linkedin.com/in/sanat-tripathi/" target="_blank">
+    </div>
 
-                <i class="fab fa-linkedin"></i>
+    <div class="coding-container">
 
-                LinkedIn
+        <!-- CodeChef -->
 
-            </a>
+        <div class="coding-card" data-aos="flip-left">
 
-            <a href="https://leetcode.com/u/CSE25_2025B01010288/" target="_blank">
+            <i class="fas fa-code"></i>
 
-                <i class="fas fa-code"></i>
+            <h2>CodeChef</h2>
 
-                LeetCode
+            <h3>⭐ 1 Star</h3>
 
-            </a>
+            <p>Rating : <strong>830</strong></p>
 
-            <a href="https://www.codechef.com/users/cse25_0288" target="_blank">
+            <p>250+ Problems Solved</p>
 
-                <i class="fas fa-laptop-code"></i>
+            <a href="https://www.codechef.com/users/cse25_0288"
+                target="_blank">
 
-                CodeChef
-
-            </a>
-
-            <a href="https://www.hackerrank.com/profile/CSE25_0288" target="_blank">
-
-                <i class="fab fa-hackerrank"></i>
-
-                HackerRank
+                Visit Profile
 
             </a>
 
         </div>
 
-    </section>
+        <!-- LeetCode -->
 
-    <!-- Contact -->
+        <div class="coding-card" data-aos="flip-left">
 
-    <section id="contact">
+            <i class="fas fa-laptop-code"></i>
 
-        <h2 class="section-title">
+            <h2>LeetCode</h2>
 
-            Contact
+            <p>Regular DSA Practice</p>
 
-        </h2>
+            <a href="https://leetcode.com/u/CSE25_2025B01010288/"
+                target="_blank">
 
-        <div class="contact-box">
-
-            <p>
-
-                Interested in collaborating or discussing AI/ML,
-                software development or projects?
-
-            </p>
-
-            <a href="https://www.linkedin.com/in/sanat-tripathi/" class="btn">
-
-                Contact Me
+                Visit Profile
 
             </a>
 
         </div>
 
+        <!-- HackerRank -->
+
+        <div class="coding-card" data-aos="flip-left">
+
+            <i class="fab fa-hackerrank"></i>
+
+            <h2>HackerRank</h2>
+
+            <p>Programming & Problem Solving</p>
+
+            <a href="https://www.hackerrank.com/profile/CSE25_0288"
+                target="_blank">
+
+                Visit Profile
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= ACHIEVEMENTS ================= -->
+
+<section class="achievements section">
+
+    <div class="section-title">
+
+        <h2>Achievements</h2>
+
+        <p>Milestones</p>
+
+    </div>
+
+    <div class="achievement-container">
+
+        <div class="achievement-card">
+
+            <h1>250+</h1>
+
+            <p>Problems Solved</p>
+
+        </div>
+
+        <div class="achievement-card">
+
+            <h1>1★</h1>
+
+            <p>CodeChef Rating</p>
+
+        </div>
+
+        <div class="achievement-card">
+
+            <h1>AI</h1>
+
+            <p>Machine Learning Track</p>
+
+        </div>
+
+        <div class="achievement-card">
+
+            <h1>2029</h1>
+
+            <p>Graduation Target</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= GITHUB ================= -->
+
+<section class="github section">
+
+    <div class="section-title">
+
+        <h2>GitHub Statistics</h2>
+
+        <p>My Coding Activity</p>
+
+    </div>
+
+    <div class="github-stats">
+
+        <img
+            src="https://github-readme-stats.vercel.app/api?username=sanatxtripathi&show_icons=true&theme=tokyonight"
+            alt="GitHub Stats">
+
+        <img
+            src="https://github-readme-streak-stats.herokuapp.com/?user=sanatxtripathi&theme=tokyonight"
+            alt="GitHub Streak">
+
+        <img
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=sanatxtripathi&layout=compact&theme=tokyonight"
+            alt="Top Languages">
+
+    </div>
+
+</section>
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="contact section">
+
+        <div class="section-title" data-aos="fade-up">
+            <h2>Contact Me</h2>
+            <p>Let's Connect</p>
+        </div>
+
+        <div class="contact-container">
+
+            <!-- Contact Info -->
+
+            <div class="contact-info" data-aos="fade-right">
+
+                <h3>Get In Touch</h3>
+
+                <p>
+                    I'm always interested in internships, hackathons,
+                    AI/ML projects, and collaboration opportunities.
+                </p>
+
+                <div class="info-box">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/sanat-tripathi/" target="_blank">
+                        LinkedIn
+                    </a>
+                </div>
+
+                <div class="info-box">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/sanatxtripathi" target="_blank">
+                        GitHub
+                    </a>
+                </div>
+
+                <div class="info-box">
+                    <i class="fas fa-code"></i>
+                    <a href="https://leetcode.com/u/CSE25_2025B01010288/" target="_blank">
+                        LeetCode
+                    </a>
+                </div>
+
+                <div class="info-box">
+                    <i class="fas fa-laptop-code"></i>
+                    <a href="https://www.codechef.com/users/cse25_0288" target="_blank">
+                        CodeChef
+                    </a>
+                </div>
+
+                <div class="info-box">
+                    <i class="fab fa-hackerrank"></i>
+                    <a href="https://www.hackerrank.com/profile/CSE25_0288" target="_blank">
+                        HackerRank
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Contact Form -->
+
+            <form class="contact-form" data-aos="fade-left">
+
+                <input type="text" placeholder="Your Name" required>
+
+                <input type="email" placeholder="Your Email" required>
+
+                <input type="text" placeholder="Subject" required>
+
+                <textarea rows="6" placeholder="Write your message..." required></textarea>
+
+                <button type="submit" class="btn">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
     </section>
 
-    <!-- Footer -->
+    <!-- ================= FOOTER ================= -->
 
     <footer>
 
-        © 2026 Sanat Tripathi
+        <h2>Sanat Tripathi</h2>
 
-        <br>
+        <p>
+            AI & Machine Learning Enthusiast | Frontend Developer | Competitive Programmer
+        </p>
 
-        Built with ❤️ using HTML, CSS & JavaScript
+        <div class="footer-social">
+
+            <a href="https://github.com/sanatxtripathi" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/sanat-tripathi/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="https://leetcode.com/u/CSE25_2025B01010288/" target="_blank">
+                <i class="fas fa-code"></i>
+            </a>
+
+            <a href="https://www.codechef.com/users/cse25_0288" target="_blank">
+                <i class="fas fa-laptop-code"></i>
+            </a>
+
+            <a href="https://www.hackerrank.com/profile/CSE25_0288" target="_blank">
+                <i class="fab fa-hackerrank"></i>
+            </a>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 Sanat Tripathi. All Rights Reserved.
+        </p>
 
     </footer>
 
-    <!-- Libraries -->
+    <!-- Scroll To Top -->
 
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <button id="topBtn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- AOS -->
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Vanilla Tilt -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+
+    <!-- Particles -->
 
     <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <!-- Main Script -->
 
     <script src="script.js"></script>
-
-</body>
-
-</html><!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Sanat Tripathi | AI & ML Portfolio</title>
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-    <!-- AOS Animation -->
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <!-- Background -->
-    <div id="particles-js"></div>
-
-    <!-- Navigation -->
-    <nav>
-
-        <div class="logo">
-            Sanat Tripathi
-        </div>
-
-        <ul>
-
-            <li><a href="#home">Home</a></li>
-
-            <li><a href="#about">About</a></li>
-
-            <li><a href="#skills">Skills</a></li>
-
-            <li><a href="#education">Education</a></li>
-
-            <li><a href="#projects">Projects</a></li>
-
-            <li><a href="#contact">Contact</a></li>
-
-        </ul>
-
-        <div class="theme-btn">
-            <i class="fa-solid fa-moon"></i>
-        </div>
-
-    </nav>
-
-    <!-- Hero -->
-
-    <section id="home" class="hero">
-
-        <div class="hero-text" data-aos="fade-right">
-
-            <h3>Hello, I'm</h3>
-
-            <h1>Sanat Tripathi</h1>
-
-            <h2>
-                <span id="typing"></span>
-            </h2>
-
-            <p>
-
-                B.Tech CSE Student specializing in
-                <strong>Track 1 – Data Visualization & AI/ML</strong>.
-
-                Passionate about Python, Machine Learning,
-                Data Science and Competitive Programming.
-
-            </p>
-
-            <a href="#projects" class="btn">
-                View Projects
-            </a>
-
-            <a href="resume.pdf" class="btn secondary">
-                Download Resume
-            </a>
-
-        </div>
-
-        <div class="hero-image" data-aos="zoom-in">
-
-            <img src="assets/profile.jpg" alt="Profile">
-
-        </div>
-
-    </section>
-
-    <!-- About -->
-
-    <section id="about">
-
-        <h2 class="section-title">
-            About Me
-        </h2>
-
-        <div class="about-container">
-
-            <div class="glass-card">
-
-                <p>
-
-                    I am a Computer Science Engineering student with a strong
-                    interest in Artificial Intelligence, Machine Learning,
-                    Data Visualization and Python.
-
-                    I enjoy solving coding challenges on LeetCode,
-                    CodeChef and HackerRank while continuously building
-                    projects that strengthen my development and AI skills.
-
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Skills -->
-
-    <section id="skills">
-
-        <h2 class="section-title">
-
-            Skills
-
-        </h2>
-
-        <div class="skills-grid">
-
-            <div class="skill-card">Python</div>
-
-            <div class="skill-card">C++</div>
-
-            <div class="skill-card">HTML</div>
-
-            <div class="skill-card">CSS</div>
-
-            <div class="skill-card">JavaScript</div>
-
-            <div class="skill-card">Git</div>
-
-            <div class="skill-card">GitHub</div>
-
-            <div class="skill-card">NumPy</div>
-
-            <div class="skill-card">Pandas</div>
-
-            <div class="skill-card">Matplotlib</div>
-
-            <div class="skill-card">Scikit-Learn</div>
-
-            <div class="skill-card">VS Code</div>
-
-        </div>
-
-    </section>
-
-    <!-- Education -->
-
-    <section id="education">
-
-        <h2 class="section-title">
-
-            Education
-
-        </h2>
-
-        <div class="timeline">
-
-            <div class="timeline-item">
-
-                <h3>B.Tech Computer Science Engineering</h3>
-
-                <p>ABES Engineering College</p>
-
-                <p>2025 – 2029</p>
-
-                <p>
-
-                    Professional Track:
-                    Data Visualization & AI/ML
-
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Projects -->
-
-    <section id="projects">
-
-        <h2 class="section-title">
-
-            Projects
-
-        </h2>
-
-        <div class="project-grid">
-
-            <div class="project-card">
-
-                <h3>Portfolio Website</h3>
-
-                <p>Responsive personal portfolio built using HTML, CSS & JavaScript.</p>
-
-            </div>
-
-            <div class="project-card">
-
-                <h3>Amazon Clone</h3>
-
-                <p>Frontend clone built using HTML & CSS.</p>
-
-            </div>
-
-            <div class="project-card">
-
-                <h3>Future AI Projects</h3>
-
-                <p>Machine Learning and Data Science projects coming soon.</p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Coding Profiles -->
-
-    <section>
-
-        <h2 class="section-title">
-
-            Coding Profiles
-
-        </h2>
-
-        <div class="profiles">
-
-            <a href="https://www.linkedin.com/in/sanat-tripathi/" target="_blank">
-
-                <i class="fab fa-linkedin"></i>
-
-                LinkedIn
-
-            </a>
-
-            <a href="https://leetcode.com/u/CSE25_2025B01010288/" target="_blank">
-
-                <i class="fas fa-code"></i>
-
-                LeetCode
-
-            </a>
-
-            <a href="https://www.codechef.com/users/cse25_0288" target="_blank">
-
-                <i class="fas fa-laptop-code"></i>
-
-                CodeChef
-
-            </a>
-
-            <a href="https://www.hackerrank.com/profile/CSE25_0288" target="_blank">
-
-                <i class="fab fa-hackerrank"></i>
-
-                HackerRank
-
-            </a>
-
-        </div>
-
-    </section>
-
-    <!-- Contact -->
-
-    <section id="contact">
-
-        <h2 class="section-title">
-
-            Contact
-
-        </h2>
-
-        <div class="contact-box">
-
-            <p>
-
-                Interested in collaborating or discussing AI/ML,
-                software development or projects?
-
-            </p>
-
-            <a href="https://www.linkedin.com/in/sanat-tripathi/" class="btn">
-
-                Contact Me
-
-            </a>
-
-        </div>
-
-    </section>
-
-    <!-- Footer -->
-
-    <footer>
-
-        © 2026 Sanat Tripathi
-
-        <br>
-
-        Built with ❤️ using HTML, CSS & JavaScript
-
-    </footer>
-
-    <!-- Libraries -->
-
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-    <script src="script.js">
-        // ==========================
-// AOS Animation
-// ==========================
-AOS.init({
-    duration: 1000,
-    once: true,
-    easing: "ease-in-out"
-});
-
-// ==========================
-// Typing Animation
-// ==========================
-new Typed("#typing", {
-    strings: [
-        "AI & Machine Learning Enthusiast",
-        "Python Developer",
-        "Data Visualization Learner",
-        "Competitive Programmer",
-        "Future AI Engineer"
-    ],
-    typeSpeed: 70,
-    backSpeed: 40,
-    backDelay: 1500,
-    loop: true
-});
-
-// ==========================
-// Particles Background
-// ==========================
-particlesJS("particles-js", {
-    particles: {
-        number: {
-            value: 80,
-            density: {
-                enable: true,
-                value_area: 800
-            }
-        },
-
-        color: {
-            value: "#38bdf8"
-        },
-
-        shape: {
-            type: "circle"
-        },
-
-        opacity: {
-            value: 0.5
-        },
-
-        size: {
-            value: 3
-        },
-
-        line_linked: {
-            enable: true,
-            distance: 150,
-            color: "#38bdf8",
-            opacity: 0.3,
-            width: 1
-        },
-
-        move: {
-            enable: true,
-            speed: 2
-        }
-    },
-
-    interactivity: {
-        detect_on: "canvas",
-
-        events: {
-            onhover: {
-                enable: true,
-                mode: "grab"
-            },
-
-            onclick: {
-                enable: true,
-                mode: "push"
-            }
-        },
-
-        modes: {
-            grab: {
-                distance: 140,
-                line_linked: {
-                    opacity: 1
-                }
-            },
-
-            push: {
-                particles_nb: 4
-            }
-        }
-    },
-
-    retina_detect: true
-});
-
-// ==========================
-// Dark / Light Theme Toggle
-// ==========================
-const themeBtn = document.querySelector(".theme-btn");
-
-themeBtn.addEventListener("click", () => {
-
-    document.body.classList.toggle("light-mode");
-
-    const icon = themeBtn.querySelector("i");
-
-    if (document.body.classList.contains("light-mode")) {
-
-        icon.classList.remove("fa-moon");
-        icon.classList.add("fa-sun");
-
-    } else {
-
-        icon.classList.remove("fa-sun");
-        icon.classList.add("fa-moon");
-    }
-
-});
-
-// ==========================
-// Navbar Scroll Effect
-// ==========================
-const navbar = document.querySelector("nav");
-
-window.addEventListener("scroll", () => {
-
-    if (window.scrollY > 80) {
-
-        navbar.style.background = "rgba(15,23,42,0.95)";
-        navbar.style.boxShadow = "0 5px 15px rgba(0,0,0,0.3)";
-
-    } else {
-
-        navbar.style.background = "rgba(15,23,42,0.75)";
-        navbar.style.boxShadow = "none";
-    }
-
-});
-
-// ==========================
-// Active Navigation Link
-// ==========================
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll("nav ul li a");
-
-window.addEventListener("scroll", () => {
-
-    let current = "";
-
-    sections.forEach(section => {
-
-        const sectionTop = section.offsetTop - 120;
-        const sectionHeight = section.clientHeight;
-
-        if (pageYOffset >= sectionTop) {
-            current = section.getAttribute("id");
-        }
-
-    });
-
-    navLinks.forEach(link => {
-
-        link.classList.remove("active");
-
-        if (link.getAttribute("href") === "#" + current) {
-            link.classList.add("active");
-        }
-
-    });
-
-});
-
-// ==========================
-// Smooth Button Animation
-// ==========================
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-
-    anchor.addEventListener("click", function (e) {
-
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
-
-            behavior: "smooth"
-
-        });
-
-    });
-
-});
-
-// ==========================
-// Hero Image Floating Effect
-// ==========================
-const heroImage = document.querySelector(".hero-image img");
-
-let direction = 1;
-
-setInterval(() => {
-
-    heroImage.style.transform = `translateY(${direction * 10}px)`;
-
-    direction *= -1;
-
-}, 1500);
-
-// ==========================
-// Reveal Cards on Hover
-// ==========================
-const cards = document.querySelectorAll(".skill-card, .project-card, .glass-card");
-
-cards.forEach(card => {
-
-    card.addEventListener("mouseenter", () => {
-
-        card.style.transform = "translateY(-10px) scale(1.03)";
-
-    });
-
-    card.addEventListener("mouseleave", () => {
-
-        card.style.transform = "translateY(0) scale(1)";
-
-    });
-
-});
-
-// ==========================
-// Console Message
-// ==========================
-console.log("%cWelcome to Sanat Tripathi's Portfolio!",
-"color:#38bdf8;font-size:18px;font-weight:bold;");
-
-    </script>
 
 </body>
 
